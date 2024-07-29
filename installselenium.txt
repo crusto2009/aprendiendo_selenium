@@ -1,0 +1,5 @@
+instalar primero selenium:
+1. Abrir una terminal
+2. escribir: pip install selenium
+3. crear archivo en la raiz del proyecto : requirements.txt
+4. en el archivo escrbir lo siguente: selenium==4.23.1
