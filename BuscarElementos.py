@@ -96,7 +96,7 @@ Selecciona el elemento 'a' en la pagina:
 """///////////////////////////////////////////////////////////////////////////// """
 
 """ xpath  -> driver.find_element(By.XPATH, "//input[@value='f']")"""
-# Un documento HTML puede considerarse como un documento XML y, a continuación, podemos utilizar xpath,
+#Un documento HTML puede considerarse como un documento XML y, a continuación, podemos utilizar xpath,
 # que será la ruta recorrida para llegar al elemento de interés para localizar el elemento
 #Resultado:
 """seleccionamos el input con la propiedad value = 'f'
