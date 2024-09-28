@@ -21,3 +21,12 @@
 | `assertLogs(logger, level)`             | Verifica que se generen logs con el nivel especificado en `logger`.                                |
 
 """
+
+""" Configuración y Limpieza """
+#setUp(self):
+# Método que se ejecuta antes de cada prueba. Se utiliza para preparar el entorno necesario para los tests,
+# como inicializar objetos, abrir conexiones, etc.
+
+#tearDown(self):
+# Método que se ejecuta después de cada prueba. Se utiliza para limpiar el entorno después de la ejecución del test,
+# como cerrar conexiones o eliminar datos.

@@ -26,6 +26,9 @@ driver=webdriver.Chrome(options=options)
 
 class InitDemo(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(self):
+        print("ejecuta antes del test")
 
     def __init__(self,url):
         self.url=url
@@ -33,11 +36,6 @@ class InitDemo(unittest.TestCase):
     #Practica con esta pagina web https://www.globalsqa.com/angularJs-protractor/Multiform/#/form/profile
     def openBrower(self):
         driver.get(self.url)
-
-        print(driver.title)
-        # Validar que la página ha cambiado y contiene resultados
-        self.assertIn("", driver.title)
-
         driver.implicitly_wait(13)
 
         try:
@@ -48,6 +46,15 @@ class InitDemo(unittest.TestCase):
             print(error)
 
         driver.quit()
+
+    def test_title(self):
+        print(driver.title)
+        # Validar que la página ha cambiado y contiene resultados
+        self.assertIn("", driver.title)
+
+    @classmethod
+    def tearDownClass(self) -> None:
+                                        print("Ejecta al terminar el test")
 
 #llamamos al mentodoy le enviamos la url.
 demo = InitDemo("https://www.globalsqa.com/angularJs-protractor/Multiform/#/form/profile")
